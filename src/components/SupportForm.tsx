@@ -81,7 +81,7 @@ const SupportForm = () => {
             setForgot(false)
         } catch (error) {
             if (error instanceof Error){
-                
+                console.error("Erro ao enviar dados ao formulário", error.message)
             }
             
         }
