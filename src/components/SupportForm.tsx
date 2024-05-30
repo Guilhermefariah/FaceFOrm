@@ -35,11 +35,13 @@ const SupportForm = () => {
             day: currentDay,
             month: currentMonth,
             year: currentYear
-
         }))
+
     }, [])
 
-
+        const dayToMonth = (month: number, year: number): number => {
+            
+        }
 
 
 
