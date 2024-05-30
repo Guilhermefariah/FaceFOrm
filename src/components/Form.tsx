@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import axios from "axios";
 
 interface formData {
-    firsName: string;
+    firstName: string;
     lastName: string;
     email: string;
     password: string;
@@ -14,5 +14,15 @@ interface formData {
 }
 
 const Form = () => {
+    const [formData, setFormData] = useState<FormData>({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        day: "",
+        month: "",
+        year: ""
+    })
     
 }
+export default Form;
