@@ -25,7 +25,7 @@ const SupportForm = () => {
     })
 
     useEffect(() => {
-
+        const currentDate = new Date();
     }, [])
 
 
@@ -35,7 +35,7 @@ const SupportForm = () => {
 
 
 
-    
+
 }
 
 export default SupportForm;
