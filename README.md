@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FaceForm
 
-## Getting Started
+Este é um projeto com um formulário, utilizando Next.js para o frontend e Node.js/Express para o backend. Ele utiliza TypeScript, ESLint e Tailwind CSS para uma experiência de desenvolvimento robusta e estilização fácil.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Estrutura do Projeto
+
+```plaintext
+FaceForm/
+├── backend/
+│   ├── controllers/
+│   │   ├── formController.ts       // Controlador para gerenciar formulários.
+│   ├── models/
+│   │   ├── formModel.ts            // Modelo de dados para formulários.
+│   ├── routes/
+│   │   ├── formRoutes.ts           // Rotas relacionadas aos formulários.
+│   ├── services/
+│   │   ├── formService.ts          // Lógica de negócio relacionada aos formulários.
+│   ├── config/
+│   │   ├── database.ts             // Configuração do banco de dados.
+│   ├── app.ts                      // Configuração do app Express.
+│   └── server.ts                   // Ponto de entrada do servidor.
+├── frontend/
+│   ├── public/
+│   │   └── img/
+│   │       └── FaceForm.jpg        // Imagem de exemplo.
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── pages/
+│   │   │   │   ├── HomePage.tsx          // Página principal que inclui o componente de formulário.
+│   │   │   │   ├── ForumPage.tsx         // Página para exibir as respostas do formulário.
+│   │   │   │   ├── Layout.tsx            // Componente para exibir metadados ao HTML
+│   │   │   └── components/
+│   │   │       ├── SupportForm.tsx       // Componente de formulário.
+│   │   │       ├── Header.tsx            // Componente para exibir logomarca e o menu de navegação principal.
+│   │   │       ├── Footer.tsx            // Componente para exibir informações de copyright, links.
+│   │   ├── styles/ 
+│   │   │   └── globals.css               // Arquivo de estilos globais que importa Tailwind CSS.
+│   │   ├── hooks/                        // Pasta para hooks customizados, se houver.
+│   │   ├── utils/                        // Pasta para funções utilitárias e helpers.
+│   │   ├── contexts/                     // Pasta para contextos do React, se houver.
+│   │   ├── services/                     // Pasta para serviços, como chamadas de API.
+│   │   ├── assets/                       // Pasta para assets, como imagens e fontes.
+│   │   └── index.tsx                     // Ponto de entrada do aplicativo.
+│   ├── package.json                      // Dependências e scripts do frontend.
+│   └── next.config.js                    // Configuração do Next.js.
+├── .gitignore
+├── README.md
+├── package.json                          // Dependências e scripts do projeto principal.
+└── server.js                             // Ponto de entrada do servidor principal.
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Backend
 
-## Learn More
+- [Node.js]
+- [Express]
+- [TypeScript]
+- [MongoDB]
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js]
+- [React]
+- [TypeScript]
+- [ESLint]
+- [TailwindCSS]
+- [Formik]
+- [Yup]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (versão 12.0 ou superior)
+- npm (versão 6.0 ou superior)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Instalação
+
+- Clone o repositório:
+
+  ```bash
+  git clone https://github.com/Guilhermefariah/FaceForm.git
+  cd FaceForm
+  ```
+
+## Instale as dependências:
+
+  ```bash
+  cd backend
+  npm install
+
+  cd ../frontend
+  npm install
+  ```
+
+## Execução
+
+  ### Inicie o Backend
+  ```bash
+  cd backend
+  npm run dev
+  ```
+
+  ### Inicie o Frontend
+  ```bash
+  cd ../frontend
+  npm run dev
+  ```
+#### Abra http://localhost:3000 no seu navegador para ver a aplicação.
+
+## Scripts Disponíveis
+
+### Backend
+* `npm run dev:` Inicia o servidor de desenvolvimento.
+* `npm run build:` Compila o backend para produção.
+* `npm start:` Inicia o servidor em produção.
+
+### Frontend
+
+* `npm run dev:` Inicia o servidor de desenvolvimento.
+* `npm run build:` Compila a aplicação para produção.
+* `npm start:` Inicia o servidor em produção.
+* `npm run lint:`Executa o linter para encontrar e corrigir problemas no código.
+
+# Estrutura de Diretórios
+## Backend
+
+* `backend/controllers:` Controladores que lidam com as requisições.
+
+* `backend/models:` Modelos que representam os dados e interagem com o banco de dados.
+* `backend/routes:` Define as rotas do backend.
+* `backend/services:` Contém a lógica de negócio.
+* `backend/config:` Configurações do projeto, como a configuração do banco de dados.
+* `backend/app.ts:` Configuração do app Express.
+* `backend/server.ts:` Ponto de entrada do servidor.
+
+## Frontend
+
+* `frontend/public:` Arquivos públicos, como imagens.
+
+* `frontend/src/app/pages:` Contém as páginas principais do aplicativo.
+* `frontend/src/app/components:` Contém os componentes reutilizáveis.
+* `frontend/src/styles:` Contém os arquivos de estilo.
+* `frontend/src/hooks:` Contém hooks customizados, se houver.
+* `frontend/src/utils:` Contém funções utilitárias e helpers.
+* `frontend/src/contexts:` Contém contextos do React, se houver.
+* `frontend/src/services:` Contém serviços, como chamadas de API.
+* `frontend/src/assets:` Contém assets, como imagens e fontes.
+* `frontend/src/index.tsx:` Ponto de entrada do aplicativo.
+* `frontend/package.json:` Dependências e scripts do frontend.
+* `frontend/next.config.js:` Configuração do Next.js.
+
+# Contribuição
+
+- Faça um fork do projeto.
+Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+
+- Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`).
+
+- Faça push para a branch (`git push origin feature/nova-feature`).
+
+- Abra um Pull Request.
+
+# Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.

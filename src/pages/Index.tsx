@@ -9,7 +9,7 @@ const IndexPage = () => {
                 Começar
             </button>
         </div>
-    );
-};
+    )
+}
 
-export default IndexPage;
+export default IndexPage
