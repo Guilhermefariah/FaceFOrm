@@ -1,25 +1,11 @@
 # FaceForm
 
-Este é um projeto com um formulário, utilizando Next.js para o frontend e Node.js/Express para o backend. Ele utiliza TypeScript, ESLint e Tailwind CSS para uma experiência de desenvolvimento robusta e estilização fácil.
-
+Este é um projeto com um formulário desenvolvido utilizando Next.js, React e TypeScript. Ele emprega ESLint para garantir um código limpo e sem erros, além de Tailwind CSS para uma estilização fácil e consistente. Essas ferramentas combinadas proporcionam uma experiência de desenvolvimento robusta e eficiente.
 
 ## Estrutura do Projeto
 
 ```plaintext
 FaceForm/
-├── backend/
-│   ├── controllers/
-│   │   └── formController.ts       // Controlador para gerenciar operações relacionadas aos formulários.
-│   ├── models/
-│   │   └── formModel.ts            // Modelo de dados para os formulários.
-│   ├── routes/
-│   │   └── formRoutes.ts           // Rotas relacionadas aos formulários.
-│   ├── services/
-│   │   └── formService.ts          // Lógica de negócio relacionada aos formulários.
-│   ├── config/
-│   │   └── database.ts             // Configuração do banco de dados utilizado pela aplicação.
-│   ├── app.ts                      // Configuração do aplicativo Express.
-│   └── server.ts                   // Ponto de entrada do servidor backend.
 ├── frontend/
 │   ├── public/
 │   │   └── img/
@@ -57,13 +43,6 @@ FaceForm/
 
 
 ## Tecnologias Utilizadas
-
-### Backend
-
-- [Node.js]
-- [Express]
-- [TypeScript]
-- [MongoDB]
 
 ### Frontend
 
@@ -108,11 +87,6 @@ FaceForm/
 
 ## Scripts Disponíveis
 
-### Backend
-* `npm run dev:` Inicia o servidor de desenvolvimento.
-* `npm run build:` Compila o backend para produção.
-* `npm start:` Inicia o servidor em produção.
-
 ### Frontend
 
 * `npm run dev:` Inicia o servidor de desenvolvimento.
@@ -121,16 +95,6 @@ FaceForm/
 * `npm run lint:`Executa o linter para encontrar e corrigir problemas no código.
 
 # Estrutura de Diretórios
-## Backend
-
-* `backend/controllers:` Controladores que lidam com as requisições.
-
-* `backend/models:` Modelos que representam os dados e interagem com o banco de dados.
-* `backend/routes:` Define as rotas do backend.
-* `backend/services:` Contém a lógica de negócio.
-* `backend/config:` Configurações do projeto, como a configuração do banco de dados.
-* `backend/app.ts:` Configuração do app Express.
-* `backend/server.ts:` Ponto de entrada do servidor.
 
 ## Frontend
 
