@@ -51,8 +51,8 @@ const SupportForm = () => {
     const valideSchema = Yup.object({
         firstName: Yup.string().required("Nome é obrigatorio"),
         lastName: Yup.string().required("Sobre nome é obrigatorio"),
-        email: Yup.string().email("Email invalido").required("Email é obrigatorio"),
-
+        email: Yup.string().email("Email inválido").required("Email é obrigatorio"),
+        password: Yup.string().min(6, "A senha deve ter pelo menos 6 caracteres").required("Senha é obrigatoria")
     })
 
 
