@@ -20,30 +20,7 @@ FaceForm/
 │   │   ├── database.ts             // Configuração do banco de dados.
 │   ├── app.ts                      // Configuração do app Express.
 │   └── server.ts                   // Ponto de entrada do servidor.
-├── frontend/
-│   ├── public/
-│   │   └── img/
-│   │       └── FaceForm.jpg        // Imagem de exemplo.
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── pages/
-│   │   │   │   ├── HomePage.tsx          // Página principal que inclui o componente de formulário.
-│   │   │   │   ├── ForumPage.tsx         // Página para exibir as respostas do formulário.
-│   │   │   │   ├── Layout.tsx            // Componente para exibir metadados ao HTML
-│   │   │   └── components/
-│   │   │       ├── SupportForm.tsx       // Componente de formulário.
-│   │   │       ├── Header.tsx            // Componente para exibir logomarca e o menu de navegação principal.
-│   │   │       ├── Footer.tsx            // Componente para exibir informações de copyright, links.
-│   │   ├── styles/ 
-│   │   │   └── globals.css               // Arquivo de estilos globais que importa Tailwind CSS.
-│   │   ├── hooks/                        // Pasta para hooks customizados, se houver.
-│   │   ├── utils/                        // Pasta para funções utilitárias e helpers.
-│   │   ├── contexts/                     // Pasta para contextos do React, se houver.
-│   │   ├── services/                     // Pasta para serviços, como chamadas de API.
-│   │   ├── assets/                       // Pasta para assets, como imagens e fontes.
-│   │   └── index.tsx                     // Ponto de entrada do aplicativo.
-│   ├── package.json                      // Dependências e scripts do frontend.
-│   └── next.config.js                    // Configuração do Next.js.
+               // Configuração do Next.js.
 ├── .gitignore
 ├── README.md
 ├── package.json                          // Dependências e scripts do projeto principal.

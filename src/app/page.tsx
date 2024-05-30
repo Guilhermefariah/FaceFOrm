@@ -1,11 +1,13 @@
+"use client";
 import React from "react";
 import SupportForm from "../components/SupportForm";
 import Navbar from "../components/Header";
+import Footer from "../components/Footer";
 
 const Page = () => {
     return (
         <div className="min-h-screen flex flex-col">
-            <Navbar /> 
+            <Navbar />
             <div className="flex-grow flex items-center justify-center p-10">
                 <div className="bg-blue-50 p-12 rounded-lg shadow-lg max-w-md w-full  hover:bg-blue-100">
                     <h1 className="text-3xl font-bold text-zinc-700 text-center mb-5">Criar uma nova conta</h1>
@@ -13,6 +15,7 @@ const Page = () => {
                     <SupportForm />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
