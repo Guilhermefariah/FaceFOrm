@@ -45,7 +45,8 @@ const SupportForm = () => {
 
     const daysArray = Array.from({
         length: dayToMonth(Number(formData.month),
-        Number(formData.year))}, (_, index) => index + 1)
+            Number(formData.year))
+    }, (_, index) => index + 1)
 
     const valideSchema = Yup.object({
         firstName: Yup.string().required('Nome é obrigatório'),
@@ -57,14 +58,14 @@ const SupportForm = () => {
         year: Yup.string().required('Ano é obrigatório')
     })
 
-    const setSubmit = async (values: formData, { resetForm }: any) =>{
+    const setSubmit = async (values: formData, { resetForm }: any) => {
         try {
             const response = await axios.post('http://localhost3000', values, {
                 headers: {
                     "Content-Type": "application/json"
                 }
             })
-            if (response.status !== 200){
+            if (response.status !== 200) {
                 throw new Error("Ocorreu um erro ao enviar para o servidor")
             }
             resetForm()
@@ -79,6 +80,9 @@ const SupportForm = () => {
             })
             setForgot(false)
         } catch (error) {
+            if (error instanceof Error){
+                
+            }
             
         }
     }
