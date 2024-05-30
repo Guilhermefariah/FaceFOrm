@@ -54,7 +54,7 @@ const SupportForm = () => {
         email: Yup.string().email("Email inválido").required("Email é obrigatorio"),
         password: Yup.string().min(6, "A senha deve ter pelo menos 6 caracteres").required("Senha é obrigatoria"),
         day: Yup.string().required("Dia é obrigatorio"),
-
+        month: Yup.string().required("Mês é obrigatorio"),
     })
 
 
