@@ -13,7 +13,7 @@ interface formData {
     year: string;
 }
 
-const Form = () => {
+const SupportForm = () => {
     const [formData, setFormData] = useState<FormData>({
         firstName: "",
         lastName: "",
@@ -23,6 +23,19 @@ const Form = () => {
         month: "",
         year: ""
     })
+
+    useEffect(() => {
+
+    }, [])
+
+
+
+
+
+
+
+
     
 }
-export default Form;
+
+export default SupportForm;
