@@ -89,7 +89,8 @@ const SupportForm = () => {
     }
     const [ForgotPassword, SetForgot] = useState(false);
     const monthsArray: string[] = [
-
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
     ];
 }
 
