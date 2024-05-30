@@ -87,11 +87,13 @@ const SupportForm = () => {
             }
         }
     }
-    const [ForgotPassword, SetForgot] = useState(false);
+    const [ForgotPassword, SetForgot] = useState(false)
     const monthsArray: string[] = [
         "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
-    ];
+    ]
+    const yearsArray: number[] = Array.from({ length: 10 }, (_, index) => new Date().getFullYear() + index)
+
 }
 
 export default SupportForm;
