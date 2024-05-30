@@ -39,11 +39,14 @@ const SupportForm = () => {
 
     }, [])
 
-        const dayToMonth = (month: number, year: number): number => {
-            return new Date(year, month, 0).getDate();
-        }
-        const dayArray = array.from()
+    const dayToMonth = (month: number, year: number): number => {
+        return new Date(year, month, 0).getDate();
+    }
 
+    const daysArray = Array.from({
+        length: dayToMonth(Number(formData.month),
+            Number(formData.year))
+    }, (_, index) => index + 1);
 
 
 
