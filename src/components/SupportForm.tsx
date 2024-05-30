@@ -80,15 +80,14 @@ const SupportForm = () => {
             })
             setForgot(false)
         } catch (error) {
-            if (error instanceof Error){
+            if (error instanceof Error) {
                 console.error("Erro ao enviar dados ao formulário", error.message)
-            }else{
-                
+            } else {
+                console.error("Erro desconhecido", error)
             }
-            
         }
     }
-
+    const [ForgotPassword, SetForgot] = useState(false);
 
 }
 
