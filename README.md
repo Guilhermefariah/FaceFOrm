@@ -2,6 +2,8 @@
 
 Este é um projeto com um formulário desenvolvido utilizando Next.js, React e TypeScript. Ele emprega ESLint para garantir um código limpo e sem erros, além de Tailwind CSS para uma estilização fácil e consistente. Essas ferramentas combinadas proporcionam uma experiência de desenvolvimento robusta e eficiente.
 
+![Alt text](/public/img/valide.jpeg)
+
 ## Estrutura do Projeto
 
 ```plaintext
@@ -40,7 +42,6 @@ FaceForm/
 
 
 ```
-
 
 ## Tecnologias Utilizadas
 
