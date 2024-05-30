@@ -9,45 +9,49 @@ Este é um projeto com um formulário, utilizando Next.js para o frontend e Node
 FaceForm/
 ├── backend/
 │   ├── controllers/
-│   │   ├── formController.ts       // Controlador para gerenciar formulários.
+│   │   └── formController.ts       // Controlador para gerenciar operações relacionadas aos formulários.
 │   ├── models/
-│   │   ├── formModel.ts            // Modelo de dados para formulários.
+│   │   └── formModel.ts            // Modelo de dados para os formulários.
 │   ├── routes/
-│   │   ├── formRoutes.ts           // Rotas relacionadas aos formulários.
+│   │   └── formRoutes.ts           // Rotas relacionadas aos formulários.
 │   ├── services/
-│   │   ├── formService.ts          // Lógica de negócio relacionada aos formulários.
+│   │   └── formService.ts          // Lógica de negócio relacionada aos formulários.
 │   ├── config/
-│   │   ├── database.ts             // Configuração do banco de dados.
-│   ├── app.ts                      // Configuração do app Express.
-│   └── server.ts                   // Ponto de entrada do servidor.
+│   │   └── database.ts             // Configuração do banco de dados utilizado pela aplicação.
+│   ├── app.ts                      // Configuração do aplicativo Express.
+│   └── server.ts                   // Ponto de entrada do servidor backend.
 ├── frontend/
 │   ├── public/
 │   │   └── img/
 │   │       └── FaceForm.jpg        // Imagem de exemplo.
 │   ├── src/
-│   │   ├── app/
-│   │   │   ├── pages/
-│   │   │   │   ├── HomePage.tsx          // Página principal que inclui o componente de formulário.
-│   │   │   │   ├── ForumPage.tsx         // Página para exibir as respostas do formulário.
-│   │   │   │   ├── Layout.tsx            // Componente para exibir metadados ao HTML
-│   │   │   └── components/
-│   │   │       ├── SupportForm.tsx       // Componente de formulário.
-│   │   │       ├── Header.tsx            // Componente para exibir logomarca e o menu de navegação principal.
-│   │   │       ├── Footer.tsx            // Componente para exibir informações de copyright, links.
-│   │   ├── styles/ 
-│   │   │   └── globals.css               // Arquivo de estilos globais que importa Tailwind CSS.
-│   │   ├── hooks/                        // Pasta para hooks customizados, se houver.
-│   │   ├── utils/                        // Pasta para funções utilitárias e helpers.
-│   │   ├── contexts/                     // Pasta para contextos do React, se houver.
-│   │   ├── services/                     // Pasta para serviços, como chamadas de API.
-│   │   ├── assets/                       // Pasta para assets, como imagens e fontes.
-│   │   └── index.tsx                     // Ponto de entrada do aplicativo.
-│   ├── package.json                      // Dependências e scripts do frontend.
-│   └── next.config.js                    // Configuração do Next.js.
+│   │   ├── components/
+│   │   │   ├── Header/
+│   │   │   │   └── Header.tsx      // Componente de cabeçalho da aplicação.
+│   │   │   ├── Footer/
+│   │   │   │   └── Footer.tsx      // Componente de rodapé da aplicação.
+│   │   │   └── SupportForm/
+│   │   │       ├── RegistrationForm.tsx    // Componente para formulário de registro.
+│   │   │       ├── ForgotPasswordForm.tsx  // Componente para formulário de recuperação de senha.
+│   │   │       └── NavigationButtons.tsx   // Componente para botões de navegação entre formulários.
+│   │   ├── pages/
+│   │   │   ├── HomePage.tsx        // Página inicial da aplicação.
+│   │   │   ├── ForumPage.tsx       // Página do fórum.
+│   │   │   └── Layout.tsx          // Componente para layout comum entre páginas.
+│   │   ├── styles/
+│   │   │   └── globals.css         // Estilos globais da aplicação.
+│   │   ├── hooks/                  // Hooks customizados da aplicação, se houver.
+│   │   ├── utils/                  // Funções utilitárias da aplicação, se houver.
+│   │   ├── contexts/               // Contextos do React, se houver.
+│   │   ├── services/               // Serviços da aplicação, como chamadas de API.
+│   │   └── assets/                 // Recursos estáticos da aplicação, como imagens e fontes.
+│   ├── package.json                // Dependências e scripts do frontend.
+│   └── next.config.js              // Configuração do Next.js.
 ├── .gitignore
 ├── README.md
-├── package.json                          // Dependências e scripts do projeto principal.
-└── server.js                             // Ponto de entrada do servidor principal.
+├── package.json                    // Dependências e scripts do projeto principal.
+└── server.js                       // Ponto de entrada do servidor principal.
+
 
 ```
 
