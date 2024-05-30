@@ -12,3 +12,7 @@ interface formData {
     month: string;
     year: string;
 }
+
+const Form = () => {
+    
+}
