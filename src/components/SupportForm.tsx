@@ -77,6 +77,7 @@ const SupportForm = () => {
                 month: "",
                 year: ""
             })
+            setForgot(false)
         } catch (error) {
             
         }
