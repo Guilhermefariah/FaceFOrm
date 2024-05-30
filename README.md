@@ -89,26 +89,17 @@ FaceForm/
 ## Instale as dependências:
 
   ```bash
-  cd backend
-  npm install
-
-  cd ../frontend
   npm install
   ```
 
 ## Execução
 
-  ### Inicie o Backend
+  ### Inicie o FaceForm
   ```bash
-  cd backend
   npm run dev
   ```
 
-  ### Inicie o Frontend
-  ```bash
-  cd ../frontend
-  npm run dev
-  ```
+
 #### Abra http://localhost:3000 no seu navegador para ver a aplicação.
 
 ## Scripts Disponíveis
