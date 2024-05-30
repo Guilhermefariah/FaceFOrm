@@ -67,6 +67,7 @@ const SupportForm = () => {
             if (response.status !== 200){
                 throw new Error("Ocorreu um erro ao enviar para o servidor")
             }
+            resetForm()
         } catch (error) {
             
         }
