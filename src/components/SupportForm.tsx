@@ -88,7 +88,9 @@ const SupportForm = () => {
         }
     }
     const [ForgotPassword, SetForgot] = useState(false);
+    const monthsArray: string[] = [
 
+    ];
 }
 
 export default SupportForm;
