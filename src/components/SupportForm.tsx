@@ -68,6 +68,15 @@ const SupportForm = () => {
                 throw new Error("Ocorreu um erro ao enviar para o servidor")
             }
             resetForm()
+            setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                password: "",
+                day: "",
+                month: "",
+                year: ""
+            })
         } catch (error) {
             
         }
