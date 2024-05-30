@@ -58,7 +58,15 @@ const SupportForm = () => {
     })
 
     const setSubmit = async (values: formData, { resetForm }: any) =>{
-        
+        try {
+            const response = await axios.post('http://localhost3000', values, {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+        } catch (error) {
+            
+        }
     }
 
 
