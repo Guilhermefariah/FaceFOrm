@@ -31,6 +31,10 @@ const SupportForm = () => {
         const currentYear = currentDate.getFullYear().toString();
 
         setFormData(prevState => ({
+            ...prevState,
+            day: currentDay,
+            month: currentMonth,
+            year: currentYear
 
         }))
     }, [])
