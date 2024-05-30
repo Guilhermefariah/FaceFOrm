@@ -51,6 +51,8 @@ const SupportForm = () => {
     const valideSchema = Yup.object({
         firstName: Yup.string().required("Nome é obrigatorio"),
         lastName: Yup.string().required("Sobre nome é obrigatorio"),
+        email: Yup.string().email("Email invalido").required("Email é obrigatorio"),
+
     })
 
 
